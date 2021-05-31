@@ -1,0 +1,89 @@
+.menu:hover{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.02);
+}
+.menu img:hover{
+    cursor: pointer;
+}
+.card-body:hover{
+    cursor: pointer;
+}
+#satu{
+    display: block;
+    height: 280px;
+}
+.menuMakanan:hover{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.01);
+}
+.menuMakanan img:hover{
+    cursor: pointer;
+}
+.menuMinuman:hover{
+    -webkit-transform: scale(1.08);
+    transform: scale(1.01);
+}
+.menuMinuman img:hover{
+    cursor: pointer;
+}
+#dua{
+    display: none;
+    height: 500px;
+}
+#tiga{
+    display: none;
+    height: 500px;
+}
+.pilihMakanan{
+    display: none;
+    height: 300px;
+}
+.pilihan{
+    text-align: center;
+}
+.pilihMinuman{
+    display: none;
+    height: 300px;
+}
+#tombol{
+    display: none;
+}
+#keluaran{
+    display: none;
+}
+#jumlahBayar{
+    display: none;
+}
+.card-text{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    border: 0;
+}
+.container-fluid{
+    color: white;
+    font-family:  'Oswald', sans-serif;
+}
+.buttonP{
+    background-color: #795548;
+    color: white;
+}
+.table{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    color: white;
+}
+a:hover{
+    color: black;
+}
+
+.pilihannya{
+    height: 200px;
+    width: auto;
+}
+.pilihanMenu{
+    height: 90%;
+}
