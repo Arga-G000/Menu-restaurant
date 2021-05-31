@@ -1,0 +1,814 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="pesan.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <title>Pesanan</title>
+  </head>
+  <body style="background-color:  #7e481c;">
+    
+    <!--menu awal-->
+    <div class="container-fluid" id="satu">
+        <h1 style="text-align: center;">ADA Resto</h1>
+        <div class="row">
+            <div class="col-sm-2">
+                <p></p>
+            </div>
+
+            <div class="col-sm-4 col-12 pb-2 pt-2 menu" id="makanan" onclick="goToMakanan()">
+                <div class="card">
+                    <img src="menu6 600x400.jpg" class="card-img-top gambar">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text" style="text-align: center;">Makanan</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-4 col-12 pb-2 pt-2 menu" id="minuman" onclick="goToMinuman()">
+                <div class="card">
+                    <img src="minum11 600x400.jpg" class="card-img-top gambar">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text" style="text-align: center;">Minuman</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-2">
+                <p></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2">
+                <p></p>
+            </div>
+            <div class="col-sm-4 col-12">
+                <button class="buttonP btn"><a href="#"><i class="fas fa-long-arrow-alt-left"></i></a></button>
+            </div>
+        </div>
+    </div>
+
+    <!--Menu Makanan-->
+    <div class="container-fluid pt-3" id="dua">
+        <div class="row">      
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan1" onclick="pilihMakanan1()">
+                <div class="card">
+                    <img src="menu1 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Mie Ayam Teriyaki <br>Rp.21.900 <br>421 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan2" onclick="pilihMakanan2()">
+                <div class="card">
+                    <img src="menu2.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Spaghetti Bolognaise <br>Rp.17.400<br>350 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan3" onclick="pilihMakanan3()">
+                <div class="card">
+                    <img src="menu3 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">French Fries <br>Rp.12.800<br>312 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan4" onclick="pilihMakanan4()">
+                <div class="card">
+                    <img src="menu4 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Chicken Mozarella <br>Rp.31.800<br>639 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan5" onclick="pilihMakanan5()">
+                <div class="card">
+                    <img src="menu5 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Chicken Steak Chessy <br> Rp.30.600<br>239 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan6" onclick="pilihMakanan6()">
+                <div class="card">
+                    <img src="menu6 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Fish & Chips <br> Rp.37.300<br>200 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan7" onclick="pilihMakanan7()">
+                <div class="card">
+                    <img src="menu7 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Nasi Cap Cay <br>Rp.23.600<br>680 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan8" onclick="pilihMakanan8()">
+                <div class="card">
+                    <img src="menu8.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Soup Ayam <br>Rp.15.500<br>95 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan9" onclick="pilihMakanan9()">
+                <div class="card">
+                    <img src="menu9.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Pesto Chicken Baked <br>Rp.22.800<br>237 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan10" onclick="pilihMakanan10()">
+                <div class="card">
+                    <img src="menu10 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Nasi Bistik Sapu <br>Rp.27.300<br>412 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan11" onclick="pilihMakanan11()">
+                <div class="card">
+                    <img src="menu11 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Nasi Ayam Cah Jamur <br>Rp.23.600<br>338 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMakanan" id="makanan12" onclick="pilihMakanan12()">
+                <div class="card">
+                    <img src="menu12 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Nasi Sapo Tahu Seafood <br>Rp.26.400<br>604 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+        </div>      
+    </div>
+
+    <!--Menu Minuman-->
+    <div class="container-fluid pt-3" id="tiga">
+        <div class="row">      
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman1" onclick="pilihMinuman1()">
+                <div class="card">
+                    <img src="minum1 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Orange Juice <br>Rp.8.000<br>45 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman2"  onclick="pilihMinuman2()">
+                <div class="card">
+                    <img src="minum2 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Black Currant <br>Rp.15.000<br>50 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman3" onclick="pilihMinuman3()">
+                <div class="card">
+                    <img src="minum3 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Frozen Capucino <br>Rp.12.000<br>110 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman4" onclick="pilihMinuman4()">
+                <div class="card">
+                    <img src="minum4 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Milkshake Strawberry <br>Rp.18.000<br>180 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman5" onclick="pilihMinuman5()">
+                <div class="card">
+                    <img src="minum5 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Es Lemon Tea <br>Rp.8.000<br>68 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman6" onclick="pilihMinuman6()">
+                <div class="card">
+                    <img src="minum6 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Bubble Tea <br>Rp.15.000<br>400 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman7" onclick="pilihMinuman7()">
+                <div class="card">
+                    <img src="minum7 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Ice Green Tea <br>Rp.13.000<br>12 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman8" onclick="pilihMinuman8()">
+                <div class="card">
+                    <img src="minum8 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Cheese Tea <br>Rp.18.000<br>100 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman9" onclick="pilihMinuman9()">
+                <div class="card">
+                    <img src="minum9 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Chocolate Milkshake <br>Rp.18.000<br>83.4 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman10" onclick="pilihMinuman10()">
+                <div class="card">
+                    <img src="minum10 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Dalgona Coffe <br>Rp.13.000<br>306 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman11" onclick="pilihMinuman11()">
+                <div class="card">
+                    <img src="minum11 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Tiramisu Iced Latte <br>Rp.18.000<br>140 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+
+            <div class="col-sm-3 col-12 col-md-3 pb-2 pt-2 menuMinuman" id="minuman12" onclick="pilihMinuman12()">
+                <div class="card">
+                    <img src="minum12 600x400.jpg" class="card-img-top pilihannya">
+                    <div class="card-body" style="background: #4b3619;">
+                      <p class="card-text">Smoothie Mangga <br>Rp.13.000<br>364 Kkal</p>
+                    </div>
+                  </div>
+            </div>
+        </div>      
+    </div>
+
+    <!--Pilih Makanan-->
+    <div class="container-fluid  pilihMakanan" id="pilihMakanan1">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Mie Ayam Teriyaki</h2>
+                    </div>
+                    <img src="menu1 600x400.jpg" class="card-img-top pilihanMenu">
+                  </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid  pilihMakanan" id="pilihMakanan2">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Spaghetti Bolognaise</h2>
+                    </div>
+                    <img src="menu2.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan3">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">French Fries</h2>
+                    </div>
+                    <img src="menu3 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan4">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Chicken Mozarella</h2>
+                    </div>
+                    <img src="menu4 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan5">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Chicken Steak Chessy</h2>
+                    </div>
+                    <img src="menu5 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan6">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Fish & Chips</h2>
+                    </div>
+                    <img src="menu6 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan7">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Nasi Cap Cay</h2>
+                    </div>
+                    <img src="menu7 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan8">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Soup Ayam</h2>
+                    </div>
+                    <img src="menu8.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan9">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Pesto Chicken Baked</h2>
+                    </div>
+                    <img src="menu9.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan10">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Nasi Bistik Sapi</h2>
+                    </div>
+                    <img src="menu10 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan11">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Nasi Ayam Cah Jamur</h2>
+                    </div>
+                    <img src="menu11 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMakanan" id="pilihMakanan12">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Nasi Sapo Tahu Seafood</h2>
+                    </div>
+                    <img src="menu12 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Pilih Minuman-->
+    <div class="container-fluid pilihMinuman" id="pilihMinuman1">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Orange Juice</h2>
+                    </div>
+                    <img src="minum1 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman2">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Black Currant</h2>
+                    </div>
+                    <img src="minum2 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman3">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Frozen Capucino</h2>
+                    </div>
+                    <img src="minum3 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman4">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Milkshake Strawberry</h2>
+                    </div>
+                    <img src="minum4 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman5">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Es Lemon Tea</h2>
+                    </div>
+                    <img src="minum5 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman6">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Bubble Tea</h2>
+                    </div>
+                    <img src="minum6 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman7">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Ice Green Tea</h2>
+                    </div>
+                    <img src="minum7 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman8">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Cheese Tea</h2>
+                    </div>
+                    <img src="minum8 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman9">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Chocolate Milkshake</h2>
+                    </div>
+                    <img src="minum9 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman10">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Dalgona Coffe</h2>
+                    </div>
+                    <img src="minum10 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman11">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Tiramisu Ice Latte</h2>
+                    </div>
+                    <img src="minum11 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pilihMinuman" id="pilihMinuman12">
+        <div class="row">      
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12 pb-2 pt-2">
+                <div class="card">
+                    <div class="card-body" style="background: #4b3619;">
+                        <h2 class="card-text pilihan">Smoothie Mangga</h2>
+                    </div>
+                    <img src="minum12 600x400.jpg" class="card-img-top pilihanMenu">    
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Tombol-->
+    <div class="container-fluid tombol mt-1" id="tombol">
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12">
+                <div class="button pt-1" style="position: absolute; margin-top: 17%;">
+                    <p style="color: wheat;">Jumlah Pesanan : 
+                        <button class="buttonP btn" onclick="kurangJumlah()">-</button>
+                        <input class="btn" type="text" style="width: 40px; background-color: #795548; color: white;" id="inputJumlah" value="0" min="0" maxlength="3" readonly>
+                        <button class="buttonP btn mt-1" onclick="tambahJumlah()">+</button>
+                        <button class="buttonP btn mt-1" type="button" onclick="tambahMenu()">Tambahkan</button>
+                        <button class="buttonP btn mt-1" type="button" onclick="menuLain()">Menu Lain</button>
+                        <button class="buttonP btn mt-1" type="button" onclick="batal()">Batal</button>
+                        <button class="buttonP btn mt-1" type="button" onclick="bayar()">Bayar</button> 
+                    </p>       
+                </div>   
+            </div>
+        </div>
+    </div>
+
+    <!--Keluaran-->
+    <div class="container-fluid mt-1" id="keluaran">
+        <h1 style="text-align: center;">Rincian Pesanan</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm-3">
+                <p></p>
+            </div>
+            <div class="col-sm-6 col-12">
+                <table class="table">
+                    <thead>
+                        <th scope="col">No</th>
+                        <th scope="col">Menu</th>
+                        <th scope="col">Kalori</th>
+                        <th scope="col">Harga</th>
+                    </thead>
+                    <tbody id="tampil">
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="row" rowspan="3">Total :</th>
+                            <td></td>
+                            <td id="totalKal"></td>
+                            <td>Rp.<span id="total"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button type="button" class="buttonP btn m-2" style="float: right;" onclick="konfirmasi()">Konfirmasi</button>
+                <button type="button" class="buttonP btn m-2" onclick="batalkan()" style="float: right;">Batal</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" id="jumlahBayar">
+        <div class="row">
+        <div class="col-sm-3">
+            <p></p>
+        </div>
+        <div class="col-sm-6 col-12">
+            <h2>Silahkan lakukan pembayaran sebesar : Rp.<span id="bayar"></span></h2>
+            <div align="center">
+                <img src="barcode.jpg" >
+            </div>
+            <button type="button" class="buttonP btn mt-2" onclick="ok()" style="float: right;"><i class="fas fa-long-arrow-alt-right"></i></button>
+        </div>
+        </div>
+    </div>
+    <script src="pesan.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+</html>
