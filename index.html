@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>ADA RESTO</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fontawesome.com/icons">
+</head>
+
+<body>
+  <div class="all">
+  <section class="tampilan">
+  <div class="menu-wrap">
+    <div class="w3-padding w3-xlarge w3-brown" id="atas">
+    <a href="index.html "><i class="material-icons">home</i>HOME</a>
+    <a href="#"><i class="material-icons">assignment</i>KATALOG MENU</a>
+    <a href="https://wa.me/6281232101003"><i class="material-icons">call</i>CP</a>
+    <a href="https://maps.app.goo.gl/j3sZmbqC5N9aNTnh6"><i class="material-icons">map</i>LOCATION</a>
+
+  </div>
+  </div>
+  <div id="scroll"><marquee scrolldelay="80" direction="left" id="teks" > >>>>> SELAMAT DATANG DI RESTORAN KAMI <<<<< </marquee></div>
+  <div id="menu" >
+  <div id="konten">
+  
+ 
+
+<div style="float: right;">
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+
+  </div> 
+
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  
+  <img src="makan1.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="minum1.jpg" style="width:100%">
+  
+</div>
+
+<div class="mySlides fade">
+  
+  <img src="makan2.jpg" style="width:100%">
+  
+</div>
+<div class="mySlides fade">
+  
+  <img src="minum2.jpg" style="width:100%">
+  
+</div>
+
+</div>
+<br>
+
+
+  <div class="pesanbutton">
+  <ul >
+    <li id="pesan">
+      <a href="#">KLIK DISINI UNTUK ORDER SEKARANG<i class="material-icons">add_shopping_cart</i></a>
+    </li>
+  </ul>
+  </div>
+  
+</div>
+</div>
+
+
+  <div id="ket">
+    <p>Temui kami di:</p>
+    <a href="http://www.facebook.com/gajeku123"><i class="material-icons">facebook</i>facebook</a>
+    <a href="https://wa.me/6281232101003"><i class="material-icons">call</i>chat WA</a>
+  </div>
+</div>
+</section>
+<script >
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</script>
+
+</body>
+</html>
