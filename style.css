@@ -1,0 +1,220 @@
+* {margin:0; padding:0;}
+
+body {
+	background-image: url(https://terminal-ikan.com/wp-content/uploads/2020/08/Terminal-kan-Resto-2.jpg);
+  	background-size: cover;
+	font-family:sans-serif;
+	color:#FFF;
+	background-repeat: no-repeat;
+
+}
+#atas{
+	border-radius: 50px;
+	
+}
+.material-icons {
+	padding-left:15px;
+	padding-right: 10px;
+	color: white;
+}
+#scroll{
+
+	padding-top: 60px;
+	padding-bottom: 0;
+	opacity: 75%;
+	min-width: 15%;
+	max-width:100% ;
+	display: block;
+
+
+}
+
+
+#menu{
+	background-image: url(food5.jpg);
+	opacity: 80%;
+	background-size: 2000px;
+	background-repeat: no-repeat;
+	padding-bottom: 250px;
+	min-width: 25px;
+
+}
+
+
+#ket{
+	background-color: #7e481c;
+	width: 100%;
+	float: center;
+	align-items: center;
+	text-align: center;
+	display: block;
+	font-size: 15px;
+
+
+}
+
+
+#list{
+	align-items: left;
+	align-self: left;
+}
+
+a{
+	text-decoration: none;
+	font-size: 15px;
+	font-family: sans-serif;
+	padding-right: 10px;
+}
+
+a:hover{
+	background-color: #800000;
+	display: inline-block;
+}
+
+a:visited{
+	color: wheat;
+}
+
+
+.menu-wrap {
+
+	padding-top: 25PX; 
+	height:50px; 
+	line-height:30px; 
+	position:relative;
+	width:80%;
+	margin:auto;
+	font-size: 5px;
+	text-align: center;
+
+	
+}
+
+p{
+	font-size: 15px;
+	text-align: center; 
+	font-family: courier new;
+	color: white;
+}
+#teks{
+	font-size: 15px;
+	font-family: Arial;
+	background-color: #7e481c;
+	display: inline-block;
+}
+
+    ul{
+
+    	justify-content: center;
+      list-style-type: none;
+      margin:0;
+      padding-top:10% ;
+      padding-left:10%;
+      width: 100px;
+      height: auto;
+      min-width: 25px;
+      font-size: 10px;
+    }
+    li a{
+    	padding: 10px 10px 10px 15px;
+      display: inline-block;
+      text-align: center;
+      align-items: center;
+      font-size: 10px;
+      background-color: #4b3619; 
+      border-radius: 25px;
+    }
+
+    li a:hover{
+    	display:inline-block;
+    	color: blue;
+      background-color: #997950;
+      
+
+    }
+
+    li a:active{
+      color: red;
+    }
+
+#pesan{
+	width: 500px;
+	font-family: sans-serif;
+	font-size: 15px;
+}
+	
+
+}
+@media screen and (max-width: 750px min-width: 50px) {
+  .tampilan {
+      width: 100%;
+      height: 100vh;
+
+  }
+  img{
+  	width: 600px;
+  	height: 400px;
+  	min-width: 200px;
+  	
+  }
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  align-self: right;
+  justify-content: right;
+  float: right;
+  margin: 20px 10px 10px 20px;
+  display: inline-block;
+  border: 20px solidblue;
+}
+
+
+.dot {
+  align-self: right;
+  justify-content: right;
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+  
+
