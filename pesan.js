@@ -271,6 +271,7 @@ function pilihMinuman12(){
     return y
     return z
 }
+banyak = [];
 harga = [];
 kalori = [];
 idMakanan = [];
@@ -280,7 +281,8 @@ function tambahMenu(){
     hasil = x * name
     kal = y * name
     idM = z
-
+    
+    banyak.push(name)
     idMakanan.push(idM)
     harga.push(hasil)
     kalori.push(kal)
@@ -318,6 +320,7 @@ function batal(){
     harga.pop()
     kalori.pop()
     idMakanan.pop()
+    banyak.pop()
     alert('Menu Berhasil Dibatalkan')
 }
 function bayar(){
@@ -350,7 +353,7 @@ function bayar(){
     var text = "";
     var i;
     for (i = 0; i < idMakanan.length; i++) {
-    text +='<tr><td scope="row">'+[i+1]+'</td><td>'+idMakanan[i]+'</td><td>'+kalori[i]+'</td><td>Rp.'+harga[i]+'</td></tr>';
+    text +='<tr><td scope="row">'+[i+1]+'</td><td>'+idMakanan[i]+'</td><td>'+banyak[i]+'</td><td>'+kalori[i]+'</td><td>Rp.'+harga[i]+'</td></tr>';
     document.getElementById("tampil").innerHTML = text;
     }
     document.getElementById("total").innerHTML = harga.reduce(myFunc);
