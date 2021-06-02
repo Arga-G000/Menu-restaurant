@@ -33,9 +33,9 @@ body {
 #menu{
 	background-image: url(food5.jpg);
 	opacity: 80%;
-	background-size: 2000px;
+	background-size: cover;
 	background-repeat: no-repeat;
-	padding-bottom: 250px;
+	padding-bottom: 300px;
 	min-width: 25px;
 
 }
@@ -52,6 +52,7 @@ body {
 
 
 }
+
 
 
 #list{
@@ -212,9 +213,122 @@ img {vertical-align: middle;}
 }
 
 
+#about
+{
+ margin-top: 200px;
+ width:650px;
+ height:350px;
+ margin-left:5%;
+ margin-right: 5%;
+ box-sizing:border-box;
+ background-color:#795c32;
+ border-radius:10px;
+ display:inline-block;
+ color:white;
+ transition: all.2s linear;
+ animation: fadeIn ease 30s;
+ -webkit-animation: fadeIn ease 30s;
+ -moz-animation: fadeIn ease 30s;
+ -o-animation: fadeIn ease 30s;
+ -ms-animation: fadeIn ease 20s;
+}
+#inf{
+	margin-top: 25px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: inline-block;
+	font-family: Broadway;
+	font-size: 20px;
+	background-color:#613613;
+
+}
+#ab{
+	margin-bottom: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
+	display: inline-block;
+	font-family: Verdana;
+	font-size: 18px;
+}
+
+#peta{
+	margin-top: 25px;
+ margin-bottom: 25px
+ width:90%;
+ height:auto;
+ margin-left:5%;
+ margin-right: 5%;
+ box-sizing:border-box;
+ background-color:#795c32;
+ padding-bottom: 25px;
+ border-radius:10px;
+ display:inline-block;
+ color:white;
+transition: all.2s linear;
+  animation: fadeIn ease 30s;
+  -webkit-animation: fadeIn ease 30s;
+  -moz-animation: fadeIn ease 30s;
+  -o-animation: fadeIn ease 30s;
+  -ms-animation: fadeIn ease 20s;
 
 
+	
 
-
+}
+#no{
+ margin-top: 100px;
+ width:600px;
+ height: 450px;
+ height:auto;
+ box-sizing:border-box;
+ background-color:#795c32;
+ border-radius:10px;
+ display:inline-block;
+ color:white;
+ transition: all.2s linear;
+ animation: fadeIn ease 30s;
+ -webkit-animation: fadeIn ease 30s;
   
+
+	
+
+}
+#map{
+ width: 600px;
+ transition: all.2s linear;
+ animation: fadeIn ease 30s;
+ -webkit-animation: fadeIn ease 30s;
+  margin-bottom: 25px;
+}
+#cp{
+	width: 600px;
+	height: 450px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+ transition: all.2s linear;
+ animation: fadeIn ease 30s;
+ -webkit-animation: fadeIn ease 30s;
+}
+
+iframe{
+	width: 360px;
+	height: 360px;
+	
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  50%{
+  	opacity: 0.5;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+
+
 
